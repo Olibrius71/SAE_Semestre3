@@ -6,8 +6,8 @@ Courte description des objectifs de la tâche/issue
 
 ## Informations
 
-Toutes informations pertinente pour faciliter la réalisation de la tâche/issue
+Toutes informations pertinentes pour faciliter la réalisation de la tâche/issue
 
-## Description détaillé
+## Description détaillée
 
-Description detaillé, spécifications, ou expression de besoin.
+Description détaillée, spécifications ou expression de besoin.
