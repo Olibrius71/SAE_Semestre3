@@ -87,7 +87,7 @@ Ce template propose des modèles pour les issues et les merges requests afin de 
 
 ##  5. <a name='Licence'></a>Licence
 
-Ce dépôt est sous licence [MIT](LICENSE.md)
+Ce dépôt est sous licence [MIT](LICENSE)
 
 ##  6. <a name='Auteur'></a>Auteur
 
