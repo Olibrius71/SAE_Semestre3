@@ -1,6 +1,6 @@
-# YoanDev-Starter-Pack-Projet
+# templategp-agile-sae-s3
 
-Starter Pack pour organiser et gérer un projet avec GitLab 🦊
+Template de base pour gérer (en mode SCRUM-light) les SAE du s3 avec GitLab 🦊
 
 ![bannière](.ressources/ban.png)
 
