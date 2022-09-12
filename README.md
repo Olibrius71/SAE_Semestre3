@@ -78,17 +78,16 @@ Ce template propose des modèles pour les issues et les merges requests afin de 
 
 ##  4. <a name='Commentutilisercedpt'></a>Comment utiliser ce dépôt ?
 
-> Vous pouvez utiliser ce dépôt comme **source d'inspiration** pour votre animer votre projet avec GitLab simplement en copiant et adaptant les idées que vous trouverez pertinentes dans votre contexte.
+> Vous utilisez ce dépôt comme **base d'inspiration** pour votre gérer votre projet avec GitLab simplement en adaptant les éléments à votre contexte.
 
 > **Vous pouvez également télécharger l'export du dépôt pour l'importer avec tous les éléments dèja présents (labels, issues, merges requests, board, branches, ...)**
 > 1. [Télécharger l'export du dépôt](.ressources/export.tar.gz)
 > 2. [Importer l'export dans GitLab](https://docs.gitlab.com/ee/user/project/settings/import_export.html#import-a-project-and-its-data)
-> 3. Amusez-vous bien !
 
 ##  5. <a name='Licence'></a>Licence
 
 Ce dépôt est sous licence [MIT](LICENSE)
 
 ##  6. <a name='Auteur'></a>Auteur
-
-[YoanDev](https://yoandev.co)
+Contact : @V.Deslandres
+Ce travail est basé sur le kit starter de [YoanDev](https://yoandev.co)
