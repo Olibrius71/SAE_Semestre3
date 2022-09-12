@@ -10,4 +10,4 @@ Toutes informations pertinentes pour faciliter la réalisation de la tâche/issu
 
 ## Description détaillée
 
-Description détaillée, spécifications ou expression de besoin.
+Description détaillée, spécifications, expression du besoin
