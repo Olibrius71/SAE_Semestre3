@@ -2,7 +2,7 @@
 
 Template de base pour gérer (en mode SCRUM-light) les SAE du s3 avec GitLab 🦊
 
-![bannière](.ressources/ban.png)
+![bannière](.ressources/SAE-s3-logo-bleu.png)
 
 ##  1. <a name='Tabledesmatires'></a> Table des matières
 <!-- vscode-markdown-toc -->
