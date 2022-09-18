@@ -25,46 +25,47 @@ Template de base pour gérer (en mode SCRUM-light) les SAE du s3 avec GitLab �
 
 ##  2. <a name='Pourquoicedpt'></a>Pourquoi ce dépôt ?
 
-Ce dépot à pour objectif de fournir un outil de démarrage rapide pour organiser et gérer un nouveau projet avec GitLab.
+Ce dépot à pour objectif de fournir un outil de démarrage rapide pour organiser et gérer de façon agile un nouveau projet avec GitLab, notamment pour la SAE du s3.
 
-Partant du constat que le démarrage d'un projet est un processus long et complexe, j'ai voulu fournir un outil simple et efficace pour lancer un projet avec GitLab et ses outils !
+Partant du constat que le démarrage d'un projet est un processus long et complexe, on fournit ici un outil simple pour lancer un projet avec GitLab, que vous pourrez réutiiser et adapter au fil du temps avec votre propre affinité de GiLab.
 
 ##  3. <a name='Queproposecedpt'></a>Que propose ce dépôt ?
 
-Ce dépôt fournit un ensemble de modèles, de fichiers et de paramétrages pour vous faciliter le démarrage d'un projet avec GitLab, vous y retrouverez les éléments suivants :
+Ce dépôt fournit un ensemble de modèles, de fichiers et de paramétrages pour vous faciliter le démarrage d'un projet avec GitLab, que vous pouvez modifier à volonté.
+Vous trouverez les éléments suivants :
 
 -   Ce fichier README.md
--   Des modèles pour les issues et les merges requests
+-   Des modèles pour les issues et les merge requests, et un modèle pour la réunion en séance avec le tuteur-SAE 
 -   Une collection de labels
 -   Un modèle de Board
 -   3 Branches :
     -   Main
-    -   Pré-Production
-    -   Production
+    -   Pré-Démonstration
+    -   Démonstration
+
+(Dans la vraie vie, ces 2 dernières branches s'appellent _pré-production_ et _production_)
 
 ###  3.1. <a name='Leslabels'></a>Les labels
 
-Les labels sont des éléments qui sont associés à des issues et merges requests et qui permettent de les classer, le organiser et de les identifier simplement.
+Les labels sont des éléments qui sont associés à des _issues_ et _merge requests_ : ils permettent de les classer, les organiser et les identifier simplement. Voici ceux qu'on propose ici, vous pouvez en supprimer ou ajouter d'autres :
 
 ![label](.ressources/labels.jpg)
 
 ###  3.2. <a name='LeBoard'></a>Le Board
 
-Le Board est l'outil central de GitLab pour organiser et gérer votre projet.
+Le Board est l'outil central de GitLab pour organiser et gérer les tâches afférentes au projet.
 
-Il va vous permettre de visualiser les différentes tâches que vous avez à accomplir, et de suivre leur progression.
+Il permet de les visualiser et de suivre leur progression.
 
 La structure de ce board adopte l'approche [Scrumban](https://asana.com/fr/resources/scrumban).
 
-![board](.ressources/theBoard.gjpg)
+![board](.ressources/theBoard.jpg)
 
 ###  3.3. <a name='Lesbranches'></a>Les branches
 
-Les trois branches proposées dans ce template permettent de gérer de manière simple l'état du déploiement de votre projet.
+Les trois branches proposées dans ce template permettent de gérer de manière simple l'état du votre projet, jusqu'à la revue finale de projet devant un jury de 2 enseignants.
 
-Elles sont particulièrement utiles si vous leurs associez des pipelines GitLab CI pour automatiser le déploiement de votre projet en fonction des branches.
-
-Ce modèle s'inspire librement de l'approche [GitLab Flow](https://www.youtube.com/watch?v=ZJuUz5jWb44).
+Ce modèle est librement inspiré de l'approche GitLab Flow, pour en savoir plus : [GitLab Flow](https://www.youtube.com/watch?v=ZJuUz5jWb44).
 
 ![](.ressources/branches.jpg)
 
@@ -78,7 +79,7 @@ Ce template propose des modèles pour les _issues_ et les _merge requests_ afin 
 
 ##  4. <a name='Commentutilisercedpt'></a>Comment utiliser ce dépôt ?
 
-> Vous utilisez ce dépôt comme **base d'inspiration** pour votre gérer votre projet avec GitLab simplement en adaptant les éléments à votre contexte.
+> Vous utilisez ce dépôt comme **base d'inspiration** pour votre gérer votre projet simplement en adaptant les éléments à votre contexte.
 
 > **Vous pouvez également télécharger l'export du dépôt pour l'importer avec tous les éléments dèja présents (labels, issues, merges requests, board, branches, ...)**
 > 1. [Télécharger l'export du dépôt](.ressources/export.tar.gz)
