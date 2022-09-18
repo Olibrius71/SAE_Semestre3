@@ -37,21 +37,37 @@ Vous trouverez les éléments suivants :
 -   Ce fichier README.md
 -   Des modèles pour les issues et les merge requests, et un modèle pour la réunion en séance avec le tuteur-SAE 
 -   Une collection de labels
+-   Une liste de jalons (_milestones_) correspondant aux dates des séances de SAE avec le tuteur
 -   Un modèle de Board
--   3 Branches :
+-   3 Branches spécifiques à la SAE :
     -   Main
     -   Pré-Démonstration
     -   Démonstration
 
-(Dans la vraie vie, ces 2 dernières branches s'appellent _pré-production_ et _production_)
+(Dans un cadre professionnel, ces 2 dernières branches s'appellent _pré-production_ et _production_)
 
 ###  3.1. <a name='Leslabels'></a>Les labels
 
-Les labels sont des éléments qui sont associés à des _issues_ et _merge requests_ : ils permettent de les classer, les organiser et les identifier simplement. Voici ceux qu'on propose ici, vous pouvez en supprimer ou ajouter d'autres :
+Les labels sont des éléments qui sont associés à des _issues_ et _merge requests_ : ils permettent de les classer, les organiser et les identifier simplement. Voici ceux qu'on propose ici, vous pouvez en supprimer ou ajouter d'autres.
 
-![label](.ressources/labels.jpg)
+On a distingué les labels prioritaires :
 
-###  3.2. <a name='LeBoard'></a>Le Board
+![label](.ressources/labels.png)
+
+Des labels utilisés pour le board :
+
+![label](.ressources/labels2.png)
+
+###  3.2. <a name='Lesjalons'></a>Les Jalons
+
+Les jalons (milestones) sont les échéances connues du projet, qu'il faut préparer ou pour lesquelles certaines tâches / livrables doivent être terminées.
+Dans le modèle, on a défini des jalons qui devraient vous aider, notamment pour préparer chaque séance de SAE avec le tuteur.
+
+Libre à vous de les adapter.
+
+![label](.ressources/jalons.png)
+
+###  3.3. <a name='LeBoard'></a>Le Board
 
 Le Board est l'outil central de GitLab pour organiser et gérer les tâches afférentes au projet.
 
@@ -59,23 +75,23 @@ Il permet de les visualiser et de suivre leur progression.
 
 La structure de ce board adopte l'approche [Scrumban](https://asana.com/fr/resources/scrumban).
 
-![board](.ressources/theBoard.jpg)
+![board](.ressources/theBoard.png)
 
-###  3.3. <a name='Lesbranches'></a>Les branches
+###  3.4. <a name='Lesbranches'></a>Les branches
 
 Les trois branches proposées dans ce template permettent de gérer de manière simple l'état du votre projet, jusqu'à la revue finale de projet devant un jury de 2 enseignants.
 
 Ce modèle est librement inspiré de l'approche GitLab Flow, pour en savoir plus : [GitLab Flow](https://www.youtube.com/watch?v=ZJuUz5jWb44).
 
-![](.ressources/branches.jpg)
+![](.ressources/branches.png)
 
-###  3.4. <a name='Modlespourlesissuesetlesmergesrequests'></a>Modèles pour les issues et les merges requests
+###  3.5. <a name='Modlespourlesissuesetlesmergesrequests'></a>Modèles pour les issues et les merges requests
 
 Ce template propose des modèles pour les _issues_ et les _merge requests_ afin de simplifier et standardiser leur utilisation par les équipes du projet.
 
-![board](.ressources/issues.jpg)
+![board](.ressources/issues.png)
 
-![board](.ressources/mr.jpg)
+![board](.ressources/mr.png)
 
 ##  4. <a name='Commentutilisercedpt'></a>Comment utiliser ce dépôt ?
 
