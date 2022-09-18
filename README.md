@@ -46,7 +46,7 @@ Ce dépôt fournit un ensemble de modèles, de fichiers et de paramétrages pour
 
 Les labels sont des éléments qui sont associés à des issues et merges requests et qui permettent de les classer, le organiser et de les identifier simplement.
 
-![label](.ressources/label.gif)
+![label](.ressources/labels.jpg)
 
 ###  3.2. <a name='LeBoard'></a>Le Board
 
@@ -56,7 +56,7 @@ Il va vous permettre de visualiser les différentes tâches que vous avez à acc
 
 La structure de ce board adopte l'approche [Scrumban](https://asana.com/fr/resources/scrumban).
 
-![board](.ressources/board.gif)
+![board](.ressources/theBoard.gjpg)
 
 ###  3.3. <a name='Lesbranches'></a>Les branches
 
@@ -66,15 +66,15 @@ Elles sont particulièrement utiles si vous leurs associez des pipelines GitLab 
 
 Ce modèle s'inspire librement de l'approche [GitLab Flow](https://www.youtube.com/watch?v=ZJuUz5jWb44).
 
-![](.ressources/branche.png)
+![](.ressources/branches.jpg)
 
 ###  3.4. <a name='Modlespourlesissuesetlesmergesrequests'></a>Modèles pour les issues et les merges requests
 
-Ce template propose des modèles pour les issues et les merges requests afin de simplifier et standardiser leur utilisation par les équipes du projet.
+Ce template propose des modèles pour les _issues_ et les _merge requests_ afin de simplifier et standardiser leur utilisation par les équipes du projet.
 
-![board](.ressources/issue.gif)
+![board](.ressources/issues.jpg)
 
-![board](.ressources/mr.gif)
+![board](.ressources/mr.jpg)
 
 ##  4. <a name='Commentutilisercedpt'></a>Comment utiliser ce dépôt ?
 
@@ -90,4 +90,4 @@ Ce dépôt est sous licence [MIT](LICENSE)
 
 ##  6. <a name='Auteur'></a>Auteur
 Contact : @V.Deslandres
-Ce travail est basé sur le kit starter de [YoanDev](https://yoandev.co)
+Ce travail est basé sur le kit starter de projet de [YoanDev](https://yoandev.co)
