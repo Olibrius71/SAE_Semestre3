@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+
+header{
+   background-color: yellowgreen;
+   min-height: 350px;
+
+   clip-path: 
+   polygon(
+       0% 0%,
+       100% 0%,
+       100% calc(100% - 20%),
+       0% 100%
+   );
+}
+
+header h1{
+    margin-top: 7%;
+    padding-left: 13%;
+    font-size: 2.8em;
+}
+
+footer{
+    background-color: black;
+    min-height: 200px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    
+}
+
+.contact ul, .about ul{
+    list-style-type: none;
+}
+
+.contact{
+    grid-area: 2/2/3/3;
+}
+
+.about{
+    grid-area: 2/3/3/4;
+}
