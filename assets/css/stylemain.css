@@ -31,7 +31,9 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 
-    
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .contact ul, .about ul{
@@ -53,11 +55,12 @@ nav{
     font-size: 1.2em;
     justify-content: space-between;
     padding: 1%;
-    padding-right: 5%;
+    padding-right: 7%;
 }
 
-.conection{
-
+.connection a{
+    text-decoration: none;
+    color: black;
 }
 
 .menu{
@@ -68,4 +71,41 @@ nav{
     list-style-type: none;
     display: flex;
     gap: 10%;
+}
+
+
+/*---------------------------------connexion---------------------------------*/
+form{
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25%;
+    
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 35%;
+    margin-right: 35%;
+
+    padding-top: 6%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    border: 1px solid black;
+    border-radius: 1.3em;
+}
+
+.login , .mdp{
+    display: grid;
+}
+
+.login input, .mdp input{
+    height: 2em;
+    border-radius: 0.5em;
+}
+
+.button{
+    height: 2.7em;
+    border-radius: 0.5em;
 }

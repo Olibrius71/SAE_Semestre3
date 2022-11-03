@@ -14,7 +14,7 @@ const LANG ='FR-fr';
 
 // Paramètres du site : nom de l'auteur ou des auteurs
 const USER_LOGIN = 'admin';
-$mdpu = password_hash('p4ss4dm1n', PASSWORD_DEFAULT);
+$mdpu = password_hash('password', PASSWORD_DEFAULT);
 
 
 //dossiers racines du site
