@@ -111,12 +111,12 @@ nav{
 /*---------------------------------achat---------------------------------*/
 .achat{
     display: grid;
-    gap: 5%;
+    gap: 15%;
 
-    margin-top: 5%;
-    margin-bottom: 7%;
+    margin-top: 2%;
+    margin-bottom: 17%;
     margin-left: 15%;
-    margin-right: 35%;
+    margin-right: 25%;
 
     padding-top: 6%;
     padding-bottom: 7%;
@@ -124,6 +124,18 @@ nav{
     padding-right: 5%;
 
     font-size: 1.2em;
+}
+
+fieldset{
+    display: grid;
+    flex-direction: column;
+    gap: 6%;
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-right: 15%;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
 }
 
 .achat div:not(.button){
@@ -144,7 +156,7 @@ nav{
     flex-direction: row;
     align-items: flex-end;
     padding-left: 18%;
-    padding-top: 3%;
+   
 }
 
 button{
