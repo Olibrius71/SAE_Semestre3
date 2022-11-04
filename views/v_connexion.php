@@ -1,6 +1,6 @@
 <?php require_once(PATH_CONTROLLERS_P.'header.php');?>
 
-    <form action="" method="post">
+    <form class="connect" action="" method="post">
         <div class="login">
             <label for="login"> Identifiant : </label>
             <input type="text" name="login" id="login"><br>

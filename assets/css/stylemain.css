@@ -31,9 +31,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    
 }
 
 .contact ul, .about ul{
@@ -58,7 +56,7 @@ nav{
     padding-right: 7%;
 }
 
-.connection a{
+.connection a, .menu a{
     text-decoration: none;
     color: black;
 }
@@ -75,7 +73,7 @@ nav{
 
 
 /*---------------------------------connexion---------------------------------*/
-form{
+.connect{
     font-size: 1.2em;
     display: grid;
     grid-template-columns: 1fr;
@@ -108,4 +106,60 @@ form{
 .button{
     height: 2.7em;
     border-radius: 0.5em;
+}
+
+/*---------------------------------achat---------------------------------*/
+.achat{
+    display: grid;
+    gap: 5%;
+
+    margin-top: 5%;
+    margin-bottom: 7%;
+    margin-left: 15%;
+    margin-right: 35%;
+
+    padding-top: 6%;
+    padding-bottom: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    font-size: 1.2em;
+}
+
+.achat div:not(.button){
+    display: flex;
+    flex-direction: column;
+}
+
+.achat input, .achat select{
+    font-size: 1.2em;
+}
+
+#choixdate{
+    height: 1.7em;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-left: 18%;
+    padding-top: 3%;
+}
+
+button{
+    height: 2em;
+    margin-left: 5%;
+    width: 10em;
+    border-radius: 0.5em;
+    border-width: 0px;
+    font-size: 1em;
+}
+
+#annuler{
+    background-color: lightgray;
+}
+
+#ok{
+    background-color: orange;
 }

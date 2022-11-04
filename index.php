@@ -14,21 +14,26 @@ if(isset($_GET['page']))
   if(is_file(PATH_CONTROLLERS_P.$_GET['page'].".php"))
   { 
     if($_GET['page']=='accueilAdmin'){
-        $page = 'photo';
+        $page = 'accueilAdmin';
       }
-    
+      //elseif($_GET['page']=='achat'){
+        //$page = 'achat';
+      //}
+    require_once(PATH_CONTROLLERS_P.$page.'.php');
   }
-  else{
-    //$page = '404'; //page demandée inexistante
+  elseif(is_file(PATH_CONTROLLERS_B.$_GET['page'].".php")){
+    $page = 'achat';
+    require_once(PATH_CONTROLLERS_B.$page.'.php');
   }
 }
 else{
   $page='accueil'; //page d'accueil du site - http://.../index.php
+  require_once(PATH_CONTROLLERS_P.$page.'.php');
 }
 	
 
 //appel du controller
-require_once(PATH_CONTROLLERS_P.$page.'.php');
+
 
 ?>
 

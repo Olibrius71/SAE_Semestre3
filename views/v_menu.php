@@ -23,7 +23,7 @@
             <div class="menu">
                 <ul>
                     <li>Accueil</li>
-                    <li>Billetterie</li>
+                    <li><a href="<?=PATH_VIEWS?>achat.php">Billetterie</a></li>
                     <li>Tournois</li>
                 </ul>
             </div>
@@ -51,7 +51,7 @@
             <div class="menu">
                 <ul>
                     <li>Accueil</li>
-                    <li>Billetterie</li>
+                    <li><a href="index.php?page=achat">Billetterie</a></li>
                     <li>Tournois</li>
                 </ul>
             </div>
