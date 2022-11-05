@@ -6,7 +6,8 @@ create table ACHETEUR
    NOMACHETEUR          varchar(100)                   null,
    PRENOMACHETEUR       varchar(100)                   null,
    IDACHETEUR           integer                        not null,
-   EMAILACHETEUR        varchar(300)                   null,
+   EMAILACHETEUR        varchar(300)                   not null,
+   NBACHETES            integer                        not null,
    constraint PK_ACHETEUR primary key (IDACHETEUR)
 );
 
