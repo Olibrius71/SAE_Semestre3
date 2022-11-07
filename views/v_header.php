@@ -1,3 +1,10 @@
+<?php
+    $title=$TITLES["default"];
+    if ($page!='' && array_key_exists($page, $TITLES)) {
+        $title = $TITLES[$page];
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,20 +14,11 @@
 
     <link href="./<?=PATH_CSS?>stylemain.css" rel="stylesheet">
     <script src="./<?=PATH_SCRIPTS?>script.js"></script>
-    <title>Document</title>
+    <title><?=$title?></title>
 </head>
 
 <body>
     <!--header-->    
-    <?php
-        $title="";
-        if ($page!='') {
-            $title=$page;
-        }
-        else{
-            $title='hey';
-        }
-    ?>
     <header>
         <?php require_once(PATH_VIEWS.'menu.php')?>
         <div class="bienvenue">
