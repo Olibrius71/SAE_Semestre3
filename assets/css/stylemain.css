@@ -175,3 +175,66 @@ button{
 #ok{
     background-color: orange;
 }
+
+
+
+
+
+/*---------------------------------generation-----------------------------------*/
+
+.generation-containers {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+#generation-container-button {
+    margin-right: 15vw;
+}
+
+#generation-container-button {
+
+}
+
+#button-generate {
+    width: 180px;
+    height: 55px;
+    background-color: orangered;
+    color: whitesmoke;
+    font-size: x-large;
+}
+
+
+.table {
+    width: auto;
+    margin: 3vw;
+    margin-bottom: 13vh;
+}
+
+.table-header {
+    display:flex;
+    width:100%;
+    background: #0A100D;
+    padding:10px;
+}
+
+.header__item {
+    color: whitesmoke;
+}
+
+.table-row {
+    display:flex;
+    width:100%;
+    padding:10px;
+    border: 1px solid #AAAAAA;
+}
+
+.table-data, .header__item {
+    flex: 1 1 20%;
+    text-align:center;
+}
+
+.header__item {
+    text-transform:uppercase;
+}
+
