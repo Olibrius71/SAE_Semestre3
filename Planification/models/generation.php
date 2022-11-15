@@ -8,6 +8,7 @@ $connexion= new Connexion();
 
 $baseDonnees = $connexion->getBdd();
 
+
 $joueurs = $baseDonnees->query("SELECT * FROM joueurs");
 $arbitres = $baseDonnees->query("SELECT * FROM arbitres");
 

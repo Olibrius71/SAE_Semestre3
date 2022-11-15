@@ -5,6 +5,7 @@ class Connexion
   private $_bdd = null;
   private static $_instance = null;
 
+
   //appelée par new
   public function __construct ()
   {

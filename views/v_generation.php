@@ -2,6 +2,7 @@
 require_once(PATH_CONTROLLERS_P.'header.php');
 ?>
 
+
 <section class="generation-containers" id="generation-container-button">
     <button id="button-generate">GÉNÉRER</button>
 </section>

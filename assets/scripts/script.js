@@ -1,11 +1,12 @@
 
 console.log(aaa);
 
+
 /*
 let generateButton = document.getElementById("button-generate");
 
 generateButton.addEventListener("click", function call() {
-    console.log("caca");
+    console.log("test");
 });
 */
 /*

@@ -21,7 +21,6 @@ if(isset($_GET['page']))
     }
     require_once(PATH_CONTROLLERS_P.$page.'.php');
   }
-
   elseif(is_file(PATH_CONTROLLERS_B.$_GET['page'].".php")){
     $page = 'achat';
     require_once(PATH_CONTROLLERS_B.$page.'.php');
