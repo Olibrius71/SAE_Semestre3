@@ -2,6 +2,9 @@
 require_once(PATH_CONTROLLERS_P.'header.php');
 ?>
 
+<?php
+global $matchs_array;
+?>
 
 <section class="generation-containers" id="generation-container-button">
     <button id="button-generate">GÉNÉRER</button>
@@ -24,47 +27,47 @@ require_once(PATH_CONTROLLERS_P.'header.php');
         <div class="table-content">
             <div class="table-row" id="table-player-names1">
                 <div class="table-data">Joueurs</div>
-                <div class="table-data">Lewandowski</div>
-                <div class="table-data">Ronaldo</div>
-                <div class="table-data">Messi</div>
-                <div class="table-data">Zieliński</div>
-                <div class="table-data">Pogba</div>
-                <div class="table-data">Szczęsny</div>
-                <div class="table-data">Krychowiak</div>
-                <div class="table-data">Kante</div>
+                <div class="table-data"><?=$matchs_array[0]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[0]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[0]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[0]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[1]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[1]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[1]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[1]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[2]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[2]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[2]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[2]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[3]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[3]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[3]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[3]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[4]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[4]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[4]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[4]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[5]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[5]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[5]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[5]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[6]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[6]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[6]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[6]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[7]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[7]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[7]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[7]["Joueur2"]["NOMJOUEUR"]?></span></div>
             </div>
             <div class="table-row" id="table-referee-names1">
                 <div class="table-data">Arbitres</div>
-                <div class="table-data">Belfadel</div>
-                <div class="table-data">Baron</div>
-                <div class="table-data">Lagache</div>
-                <div class="table-data">Leroux</div>
-                <div class="table-data">Affou</div>
-                <div class="table-data">Goncalves</div>
-                <div class="table-data">Joubert</div>
-                <div class="table-data">Watrigant</div>
+                <div class="table-data"><?=$matchs_array[0]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[0]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[1]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[1]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[2]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[2]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[3]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[3]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[4]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[4]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[5]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[5]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[6]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[6]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[7]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[7]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
             </div>
             <div class="table-row" id="table-referees-secondary-names1">
                 <div class="table-data">Arbitres secondaires</div>
-                <div class="table-data">0</div>
-                <div class="table-data">2</div>
-                <div class="table-data">2</div>
-                <div class="table-data">2</div>
-                <div class="table-data">z</div>
-                <div class="table-data">d</div>
-                <div class="table-data">c</div>
-                <div class="table-data">c</div>
+                <div class="table-data"><?=$matchs_array[0]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[0]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[0]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[0]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[1]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[1]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[1]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[1]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[2]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[2]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[2]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[2]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[3]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[3]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[3]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[3]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[4]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[4]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[4]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[4]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[5]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[5]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[5]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[5]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[6]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[6]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[6]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[6]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[7]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[7]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[7]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[7]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
             </div>
             <div class="table-row" id="table-grabers-names1">
                 <div class="table-data">Ramasseurs</div>
-                <div class="table-data">0</div>
-                <div class="table-data">2</div>
-                <div class="table-data">2</div>
-                <div class="table-data">2</div>
-                <div class="table-data">z</div>
-                <div class="table-data">e</div>
-                <div class="table-data">r</div>
-                <div class="table-data">k</div>
+                <div class="table-data"><?=$matchs_array[0]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[0]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[0]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[0]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[1]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[1]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[1]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[1]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[2]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[2]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[2]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[2]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[3]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[3]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[3]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[3]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[4]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[4]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[4]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[4]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[5]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[5]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[5]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[5]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[6]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[6]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[6]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[6]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[7]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[7]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[7]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[7]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
             </div>
         </div>
     </div>
@@ -84,47 +87,47 @@ require_once(PATH_CONTROLLERS_P.'header.php');
         <div class="table-content">
             <div class="table-row" id="table-player-names2">
                 <div class="table-data">Joueurs</div>
-                <div class="table-data">Griezmann</div>
-                <div class="table-data">Pepe</div>
-                <div class="table-data">Balotelli</div>
-                <div class="table-data">Glik</div>
-                <div class="table-data">Maguire</div>
-                <div class="table-data">Giroud</div>
-                <div class="table-data">Benzema</div>
-                <div class="table-data">Szymański</div>
+                <div class="table-data"><?=$matchs_array[8]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[8]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[8]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[8]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[9]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[9]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[9]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[9]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[10]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[10]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[10]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[10]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[11]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[11]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[11]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[11]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[12]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[12]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[12]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[12]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[13]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[13]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[13]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[13]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[14]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[14]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[14]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[14]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[15]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[15]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_array[15]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[15]["Joueur2"]["NOMJOUEUR"]?></span></div>
             </div>
             <div class="table-row" id="table-referee-names2">
                 <div class="table-data">Arbitres</div>
-                <div class="table-data">Macron</div>
-                <div class="table-data">Zemmour</div>
-                <div class="table-data">Duda</div>
-                <div class="table-data">Putin</div>
-                <div class="table-data">Trump</div>
-                <div class="table-data">Hitler</div>
-                <div class="table-data">Zelensky</div>
-                <div class="table-data">Biden</div>
+                <div class="table-data"><?=$matchs_array[8]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[8]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[9]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[9]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[10]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[10]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[11]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[11]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[12]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[12]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[13]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[13]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[14]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[14]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[15]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[15]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
             </div>
             <div class="table-row" id="table-referees-secondary-names2">
                 <div class="table-data">Arbitres secondaires</div>
-                <div class="table-data">0</div>
-                <div class="table-data">2</div>
-                <div class="table-data">2</div>
-                <div class="table-data">2</div>
-                <div class="table-data">z</div>
-                <div class="table-data">d</div>
-                <div class="table-data">c</div>
-                <div class="table-data">c</div>
+                <div class="table-data"><?=$matchs_array[0]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[0]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[8]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[8]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[1]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[1]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[9]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[9]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[2]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[2]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[10]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[10]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[3]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[3]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[11]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[11]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[4]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[4]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[12]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[12]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[5]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[5]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[13]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[13]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[6]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[6]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[14]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[14]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?=$matchs_array[7]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[7]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_array[15]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_array[15]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
             </div>
             <div class="table-row" id="table-grabbers-names2">
                 <div class="table-data">Ramasseurs</div>
-                <div class="table-data">0</div>
-                <div class="table-data">2</div>
-                <div class="table-data">2</div>
-                <div class="table-data">2</div>
-                <div class="table-data">z</div>
-                <div class="table-data">e</div>
-                <div class="table-data">r</div>
-                <div class="table-data">k</div>
+                <div class="table-data"><?=$matchs_array[8]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[8]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[8]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[8]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[9]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[9]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[9]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[9]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[10]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[10]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[10]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[10]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[11]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[11]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[11]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[11]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[12]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[12]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[12]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[12]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[13]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[13]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[13]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[13]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[14]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[14]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[14]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[14]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_array[15]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[15]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_array[15]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_array[15]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
             </div>
         </div>
     </div>
