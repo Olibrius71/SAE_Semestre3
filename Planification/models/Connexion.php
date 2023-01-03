@@ -9,7 +9,7 @@ class Connexion
   //appelée par new
   public function __construct ()
   {
-    $port = 3307;
+    $port = 3306;
 	$this->_bdd = new PDO('mysql:host='.BD_HOST.'; dbname='.BD_DBNAME.';port='.$port.';charset=utf8', BD_USER, BD_PWD,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 	$this->_bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   }

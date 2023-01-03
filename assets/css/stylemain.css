@@ -276,5 +276,22 @@ button{
     color: lime;
 }
 
+#modify-confirm {
+    font-size: 40px;
+    color: orangered;
+    visibility: hidden;
+}
 
+/*
+#validate-player, #validate-court {
+    width: 100px;
+    height: 40px;
+    background-color: lime;
+    color: #0A100D;
+    font-size: larger;
+
+    position: absolute;
+    visibility: hidden;
+}
+*/
 

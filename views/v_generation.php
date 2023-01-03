@@ -345,55 +345,66 @@ global $matchs_seiziemes_array;
         <button id="modify-court">MODIFIER COURT</button>
         <select id="old-player-select">
             <option>--JOUEUR A CHANGER--</option>
-            <option><?=$matchs_seiziemes_array[0]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[0]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[0]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[0]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[1]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[1]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[1]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[1]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[2]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[2]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[2]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[2]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[3]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[3]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[3]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[3]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[4]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[4]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[4]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[4]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[5]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[5]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[5]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[5]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[6]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[6]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[6]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[6]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[7]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[7]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[7]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[7]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[8]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[8]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[8]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[8]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[9]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[9]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[9]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[9]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[10]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[10]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[10]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[10]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[11]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[11]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[11]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[11]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[12]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[12]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[12]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[12]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[13]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[13]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[13]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[13]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[14]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[14]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[14]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[14]["Joueur2"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[15]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[15]["Joueur1"]["NOMJOUEUR"]?></option>
-            <option><?=$matchs_seiziemes_array[15]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[15]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[1,1]><?=$matchs_seiziemes_array[0]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[0]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[1,2]><?=$matchs_seiziemes_array[0]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[0]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[2,1]><?=$matchs_seiziemes_array[1]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[1]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[2,2]><?=$matchs_seiziemes_array[1]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[1]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[3,1]><?=$matchs_seiziemes_array[2]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[2]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[3,2]><?=$matchs_seiziemes_array[2]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[2]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[4,1]><?=$matchs_seiziemes_array[3]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[3]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[4,2]><?=$matchs_seiziemes_array[3]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[3]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[5,1]><?=$matchs_seiziemes_array[4]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[4]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[5,2]><?=$matchs_seiziemes_array[4]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[4]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[6,1]><?=$matchs_seiziemes_array[5]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[5]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[6,2]><?=$matchs_seiziemes_array[5]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[5]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[7,1]><?=$matchs_seiziemes_array[6]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[6]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[7,2]><?=$matchs_seiziemes_array[6]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[6]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[8,1]><?=$matchs_seiziemes_array[7]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[7]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[8,2]><?=$matchs_seiziemes_array[7]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[7]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[9,1]><?=$matchs_seiziemes_array[8]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[8]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[9,2]><?=$matchs_seiziemes_array[8]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[8]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[10,1]><?=$matchs_seiziemes_array[9]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[9]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[10,2]><?=$matchs_seiziemes_array[9]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[9]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[11,1]><?=$matchs_seiziemes_array[10]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[10]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[11,2]><?=$matchs_seiziemes_array[10]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[10]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[12,1]><?=$matchs_seiziemes_array[11]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[11]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[12,2]><?=$matchs_seiziemes_array[11]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[11]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[13,1]><?=$matchs_seiziemes_array[12]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[12]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[13,2]><?=$matchs_seiziemes_array[12]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[12]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[14,1]><?=$matchs_seiziemes_array[13]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[13]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[14,2]><?=$matchs_seiziemes_array[13]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[13]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[15,1]><?=$matchs_seiziemes_array[14]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[14]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[15,2]><?=$matchs_seiziemes_array[14]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[14]["Joueur2"]["NOMJOUEUR"]?></option>
+            <option value=[16,1]><?=$matchs_seiziemes_array[15]["Joueur1"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[15]["Joueur1"]["NOMJOUEUR"]?></option>
+            <option value=[16,2]><?=$matchs_seiziemes_array[15]["Joueur2"]["PRENOMJOUEUR"]?> <?=$matchs_seiziemes_array[15]["Joueur2"]["NOMJOUEUR"]?></option>
         </select>
         <select id="old-court-select">
             <option>--COURT A CHANGER--</option>
-            <option>GRIEZMANN Antoine</option>
-            <option>BENZEMA Karim</option>
+            <?php foreach ($courts_selectionnes as $court){?>
+                <option value="<?=$court["IDCOURT"]?>">Court <?=$court["IDCOURT"]?></option>
+            <?php }?>
         </select>
         <select id="new-player-select">
-            <option>--NOUVEAU JOUEUR--</option>
-            <option>SZYMANSKI Damian</option>
-            <option>SZCZESNY Wojciech</option>
+            <option value=<?=$matchs_seiziemes_array?>>--NOUVEAU JOUEUR--</option>
+            <?php $indice=0; foreach ($joueurs_array as $joueur){?>
+                <option value="<?=$indice?>"><?=$joueur["PRENOMJOUEUR"]?> <?=$joueur["NOMJOUEUR"]?></option>
+            <?php $indice++; }?>
         </select>
         <select id="new-court-select">
             <option>--NOUVEAU COURT--</option>
-            <option>GRIEZMANN Antoine</option>
-            <option>BENZEMA Karim</option>
+            <?php foreach ($courts_array as $court){
+                if (!in_array($court,$courts_selectionnes)) {  ?>
+                    <option value="<?=$court["IDCOURT"]?>">Court <?=$court["IDCOURT"]?></option>
+            <?php }   } ?>
         </select>
     </section>
+    <div id="modify-confirm">MODIFICATION ENREGISTREE</div>
+    <!--
+    <form id="validate-form" method="post" action="">
+        <input type="submit" name="validate-player" id="validate-player">
+        <input type="submit" name="validate-court" id="validate-court">
+    </form>
+    -->
 
 </section>
 
