@@ -1,19 +1,6 @@
 <?php
 
 
-/*
-if (isset($_POST["old_player"])) {
-    $old_player = $_POST["old_player"];
-    $new_player_index = intval($_POST["new_player_index"]);
-    $matchs_1er_tour = $_POST["matchs_1er_tour"];
-    generateTables($old_player,$new_player_index,$matchs_1er_tour);
-    return;
-}
-*/
-echo "adrien tacher";
-
-echo "chibre";
-
 require_once(PATH_MODELS_P.'Connexion.php');
 
 $connexion= new Connexion();
@@ -21,18 +8,7 @@ $connexion= new Connexion();
 $baseDonnees = $connexion->getBdd();
 
 
-
-function testfonc() {
-    echo "queue";
-}
-
-function testcaca() {
-    echo "gay";
-}
-
-
 $joueurs_atp = $baseDonnees->query("SELECT atp FROM joueurs ORDER BY atp ASC;")->fetchAll();
-
 
 
 function Quartile($Array, $Quartile) {
@@ -55,7 +31,6 @@ function Quartile($Array, $Quartile) {
 
 $quartil3 = Quartile($joueurs_atp,0.75);
 
-echo $quartil3;
 
 
 $joueurs_req = $baseDonnees->prepare("SELECT * FROM joueurs WHERE atp >= ?;");
@@ -73,22 +48,13 @@ foreach ($indices_joueurs_selectionnes as $indice) {
 }
 shuffle($joueurs_selectionnes);
 
-/*
-foreach ($joueurs_selectionnes as $joueur_selectionne) {
-    echo $joueur_selectionne["NOMJOUEUR"]. "  ".$joueur_selectionne["IDJOUEUR"]."  ".$joueur_selectionne["ATP"]."<br>";
-}
-*/
+
 
 
 $arbitres_array = $baseDonnees->query("SELECT * FROM arbitres;")->fetchAll();
-$ramasseurs_array = $baseDonnees->query("SELECT * FROM ramasseurs")->fetchAll();
+$ramasseurs_array = $baseDonnees->query("SELECT * FROM equiperamasseurs")->fetchAll();
 
-$ramasseurs_selectionnes = array();
 
-$indices_ramasseurs_selectionnes = array_rand($ramasseurs_array,32);
-foreach ($indices_ramasseurs_selectionnes as $indice) {
-    $ramasseurs_selectionnes[] = $ramasseurs_array[$indice];
-}
 
 
 $courts_array = $baseDonnees->query("SELECT * FROM courts;")->fetchAll();
@@ -98,18 +64,19 @@ $indices_courts_selectionnes = array_rand($courts_array,16);
 foreach ($indices_courts_selectionnes as $indice) {
     $courts_selectionnes[] = $courts_array[$indice];
 }
-shuffle($courts_selectionnes);
+
 
 shuffle($arbitres_array);
 $id_arbitres_selectionnes = array();
 
-function fillMatchArray($nb_matchs,$need_to_fill_joueurs)
+function fillMatchArray($nb_matchs,$need_to_fill_joueurs): array
 {
     $matchs_array = array();
     global $joueurs_selectionnes;
     global $arbitres_array;
     global $id_arbitres_selectionnes;
-    global $ramasseurs_selectionnes;
+    global $ramasseurs_array;
+    shuffle($ramasseurs_array);
     global $courts_selectionnes;
     shuffle($courts_selectionnes);
 
@@ -118,8 +85,8 @@ function fillMatchArray($nb_matchs,$need_to_fill_joueurs)
             $joueur1 = $joueurs_selectionnes[2 * $match];
             $joueur2 = $joueurs_selectionnes[2 * $match + 1];
         }
-        $ramasseur1 = $ramasseurs_selectionnes[2 * $match];
-        $ramasseur2 = $ramasseurs_selectionnes[2 * $match + 1];
+        $team_ramasseur1 = $ramasseurs_array[2 * $match];
+        $team_ramasseur2 = $ramasseurs_array[2 * $match + 1];
         $court = $courts_selectionnes[$match];
         $arbitre_principal = null;
         $arbitre_secondaire1 = null;
@@ -158,10 +125,10 @@ function fillMatchArray($nb_matchs,$need_to_fill_joueurs)
             }
         }
         if ($need_to_fill_joueurs) {
-            $matchs_array[] = ["Joueur1" => $joueur1, "Joueur2" => $joueur2, "ArbitrePrincipal" => $arbitre_principal, "ArbitreSecondaire1" => $arbitre_secondaire1, "ArbitreSecondaire2" => $arbitre_secondaire2, "Ramasseur1" => $ramasseur1, "Ramasseur2" => $ramasseur2, "Court" => $court];
+            $matchs_array[] = ["Joueur1" => $joueur1, "Joueur2" => $joueur2, "ArbitrePrincipal" => $arbitre_principal, "ArbitreSecondaire1" => $arbitre_secondaire1, "ArbitreSecondaire2" => $arbitre_secondaire2, "EquipeRamasseurs1" => $team_ramasseur1, "EquipeRamasseurs2" => $team_ramasseur2, "Court" => $court];
         }
         else {
-            $matchs_array[] = ["ArbitrePrincipal" => $arbitre_principal, "ArbitreSecondaire1" => $arbitre_secondaire1, "ArbitreSecondaire2" => $arbitre_secondaire2, "Ramasseur1" => $ramasseur1, "Ramasseur2" => $ramasseur2, "Court" => $court];
+            $matchs_array[] = ["ArbitrePrincipal" => $arbitre_principal, "ArbitreSecondaire1" => $arbitre_secondaire1, "ArbitreSecondaire2" => $arbitre_secondaire2, "EquipeRamasseurs1" => $team_ramasseur1, "EquipeRamasseurs2" => $team_ramasseur2, "Court" => $court];
         }
     }
     return $matchs_array;
@@ -213,6 +180,7 @@ function modifyCourt($oldCourt,$newCourt) {
     global $matchs_demis_array;
     global $matchs_finale_array;
     global $courts_array;
+
     foreach ($matchs_seiziemes_array as $nbMatch => $match) {
         if ($match["Court"]["IDCOURT"]==$oldCourt) $matchs_seiziemes_array[$nbMatch]["Court"] = $courts_array[$newCourt-1];
     }
@@ -229,11 +197,4 @@ function modifyCourt($oldCourt,$newCourt) {
 }
 
 
-function generateTables() {
-
-
-}
-
-
 ?>
-}

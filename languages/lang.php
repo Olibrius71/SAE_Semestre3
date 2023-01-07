@@ -7,6 +7,7 @@ $TITLES = array(
     "accueilAdmins" => "Interface d'administration",
     "connexion" => "Me connecter",
     "achat" => "Acheter un billet",
+    "generation" => "Planification Des Matchs",
 );
 
 ?>

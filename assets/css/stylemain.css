@@ -188,20 +188,20 @@ button{
     text-align: center;
 }
 
-#generation-container-button {
-    margin-right: 15vw;
+#generation-container-information {
+    margin-left: 12vw;
+    margin-right: 12vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }
 
-#generation-container-button {
-
+#generation-information {
+    font-size: 30px;
 }
 
-#button-generate {
-    width: 180px;
-    height: 55px;
-    background-color: orangered;
-    color: whitesmoke;
-    font-size: x-large;
+#generation-description {
+    font-size: 21px;
 }
 
 
@@ -281,17 +281,3 @@ button{
     color: orangered;
     visibility: hidden;
 }
-
-/*
-#validate-player, #validate-court {
-    width: 100px;
-    height: 40px;
-    background-color: lime;
-    color: #0A100D;
-    font-size: larger;
-
-    position: absolute;
-    visibility: hidden;
-}
-*/
-

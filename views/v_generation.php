@@ -6,8 +6,9 @@ require_once(PATH_CONTROLLERS_P.'header.php');
 global $matchs_seiziemes_array;
 ?>
 
-<section class="generation-containers" id="generation-container-button">
-    <button id="button-generate">GÉNÉRER</button>
+<section class="generation-containers" id="generation-container-information">
+    <h2 id="generation-information">Génération aléatoire de la plannification des matchs</h2>
+    <div id="generation-description">   Voici la génération aléatoire, si vous souhaitez en avoir une toute nouvelle et tout regénérer, il vous suffit de rafraîchir la page. Sinon, si vous souhaitez seulement modifier un ou plusieurs joueurs ou courts, vous pouvez utiliser les boutons prévus à cet effet en bas de la page.</div>
 </section>
 
 <section class="generation-containers" id="generation-container-results">
@@ -60,14 +61,14 @@ global $matchs_seiziemes_array;
             </div>
             <div class="table-row" id="table-grabers-names1">
                 <div class="table-data">Ramasseurs</div>
-                <div class="table-data"><?=$matchs_seiziemes_array[0]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[0]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[0]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[0]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[1]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[1]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[1]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[1]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[2]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[2]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[2]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[2]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[3]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[3]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[3]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[3]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[4]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[4]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[4]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[4]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[5]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[5]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[5]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[5]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[6]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[6]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[6]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[6]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[7]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[7]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[7]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[7]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[0]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[0]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[1]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[1]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[2]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[2]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[3]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[3]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[4]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[4]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[5]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[5]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[6]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[6]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[7]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[7]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
             </div>
             <div class="table-row" id="table-courts-names1">
                 <div class="table-data">Courts</div>
@@ -131,14 +132,14 @@ global $matchs_seiziemes_array;
             </div>
             <div class="table-row" id="table-grabbers-names2">
                 <div class="table-data">Ramasseurs</div>
-                <div class="table-data"><?=$matchs_seiziemes_array[8]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[8]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[8]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[8]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[9]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[9]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[9]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[9]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[10]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[10]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[10]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[10]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[11]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[11]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[11]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[11]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[12]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[12]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[12]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[12]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[13]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[13]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[13]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[13]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[14]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[14]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[14]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[14]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[15]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[15]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_seiziemes_array[15]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[15]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[8]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[8]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></span></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[9]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[9]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></span></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[10]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[10]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></span></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[11]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[11]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></span></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[12]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[12]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></span></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[13]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[13]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></span></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[14]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[14]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></span></div>
+                <div class="table-data"><?=$matchs_seiziemes_array[15]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_seiziemes_array[15]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></span></div>
             </div>
             <div class="table-row" id="table-courts-names2">
                 <div class="table-data">Courts</div>
@@ -203,14 +204,14 @@ global $matchs_seiziemes_array;
             </div>
             <div class="table-row" id="table-grabers-names3">
                 <div class="table-data">Ramasseurs</div>
-                <div class="table-data"><?=$matchs_huitiemes_array[0]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[0]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_huitiemes_array[0]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[0]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[1]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[1]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_huitiemes_array[1]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[1]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[2]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[2]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_huitiemes_array[2]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[2]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[3]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[3]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_huitiemes_array[3]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[3]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[4]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[4]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_huitiemes_array[4]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[4]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[5]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[5]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_huitiemes_array[5]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[5]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[6]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[6]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_huitiemes_array[6]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[6]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[7]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[7]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_huitiemes_array[7]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[7]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_huitiemes_array[0]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_huitiemes_array[0]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_huitiemes_array[1]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_huitiemes_array[1]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_huitiemes_array[2]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_huitiemes_array[2]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_huitiemes_array[3]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_huitiemes_array[3]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_huitiemes_array[4]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_huitiemes_array[4]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_huitiemes_array[5]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_huitiemes_array[5]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_huitiemes_array[6]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_huitiemes_array[6]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_huitiemes_array[7]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_huitiemes_array[7]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
             </div>
             <div class="table-row" id="table-courts-names3">
                 <div class="table-data">Courts</div>
@@ -259,10 +260,10 @@ global $matchs_seiziemes_array;
             </div>
             <div class="table-row" id="table-grabers-names4">
                 <div class="table-data">Ramasseurs</div>
-                <div class="table-data"><?=$matchs_quarts_array[0]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[0]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_quarts_array[0]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[0]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_quarts_array[1]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[1]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_quarts_array[1]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[1]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_quarts_array[2]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[2]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_quarts_array[2]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[2]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_quarts_array[3]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[3]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_quarts_array[3]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[3]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_quarts_array[0]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_quarts_array[0]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_quarts_array[1]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_quarts_array[1]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_quarts_array[2]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_quarts_array[2]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_quarts_array[3]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_quarts_array[3]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
             </div>
             <div class="table-row" id="table-courts-names4">
                 <div class="table-data">Courts</div>
@@ -299,8 +300,8 @@ global $matchs_seiziemes_array;
             </div>
             <div class="table-row" id="table-grabers-names5">
                 <div class="table-data">Ramasseurs</div>
-                <div class="table-data"><?=$matchs_demis_array[0]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_demis_array[0]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_demis_array[0]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_demis_array[0]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_demis_array[1]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_demis_array[1]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_demis_array[1]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_demis_array[1]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_demis_array[0]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_demis_array[0]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
+                <div class="table-data"><?=$matchs_demis_array[1]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_demis_array[1]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
             </div>
             <div class="table-row" id="table-courts-names5">
                 <div class="table-data">Courts</div>
@@ -331,7 +332,7 @@ global $matchs_seiziemes_array;
             </div>
             <div class="table-row" id="table-grabers-names6">
                 <div class="table-data">Ramasseurs</div>
-                <div class="table-data"><?=$matchs_finale_array[0]["Ramasseur1"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_finale_array[0]["Ramasseur1"]["NOMRAMASSEUR"]?></span> et <?=$matchs_finale_array[0]["Ramasseur2"]["PRENOMRAMASSEUR"]?> <span style="text-transform:uppercase"><?=$matchs_finale_array[0]["Ramasseur2"]["NOMRAMASSEUR"]?></span></div>
+                <div class="table-data"><?=$matchs_finale_array[0]["EquipeRamasseurs1"]["NOMEQUIPERAMASSEURS"]?> et <?=$matchs_finale_array[0]["EquipeRamasseurs2"]["NOMEQUIPERAMASSEURS"]?></div>
             </div>
             <div class="table-row" id="table-courts-names6">
                 <div class="table-data">Courts</div>
@@ -399,12 +400,7 @@ global $matchs_seiziemes_array;
         </select>
     </section>
     <div id="modify-confirm">MODIFICATION ENREGISTREE</div>
-    <!--
-    <form id="validate-form" method="post" action="">
-        <input type="submit" name="validate-player" id="validate-player">
-        <input type="submit" name="validate-court" id="validate-court">
-    </form>
-    -->
+
 
 </section>
 

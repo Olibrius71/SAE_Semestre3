@@ -879,6 +879,16 @@ create index TOURNOI_PK on TOURNOI (
 IDTOURNOI ASC
 );
 
+/*==============================================================*/
+/* Table: Equipes ramasseurs                                    */
+/*==============================================================*/
+CREATE TABLE `equiperamasseurs` (
+    IDEQUIPERAMASSEURS integer NOT NULL,
+    NOMEQUIPERAMASSEURS varchar(100) NULL,
+    constraint PK_EQUIPERAMASSEURS primary key (IDEQUIPERAMASSEURS)
+);
+
+
 alter table APOURCATEGORIE
    add constraint FK_APOURCAT_APOURCATE_BILLET foreign key (REFERENCE)
       references BILLET (REFERENCE)
@@ -3046,5 +3056,98 @@ VALUES
   (1,"Loge",1),
   (2,"cat1",2),
   (3,"cat2",3);
+
+/**/
+
+
+/* Equipes Ramasseurs */
+
+INSERT INTO equiperamasseurs VALUES
+                                 (10001,"Salad"),
+                                 (10002,"Faze"),
+                                 (10003,"BdeInfo"),
+                                 (10004,"PSG"),
+                                 (10005,"Liverpool"),
+                                 (10006,"TennisLovers"),
+                                 (10007,"OneTwoThreeVivaLAlgérie"),
+                                 (10008,"LesMarocains"),
+                                 (10009,"Gayzer"),
+                                 (10010,"Optic");
+
+
+INSERT INTO equiperamasseurs VALUES
+                                 (10011,"AlMazrah"),
+                                 (10012,"VladivostokLyudi"),
+                                 (10013,"OlympiqueMarseille"),
+                                 (10014,"AssembléeNationale"),
+                                 (10015,"KylieJennerTeam"),
+                                 (10016,"JohnnySinsFans"),
+                                 (10017,"GliItaliani"),
+                                 (10018,"RamasseursDeBallesDAixEnProvence"),
+                                 (10019,"ParisLions"),
+                                 (10020,"RonaldoIsBetterThanMessi");
+
+
+INSERT INTO equiperamasseurs VALUES
+                                 (10021,"LesMusulmans"),
+                                 (10022,"DestructGrabbers"),
+                                 (10023,"LesRamasseursMousquetaires"),
+                                 (10024,"LaFamilleBenJemia"),
+                                 (10025,"LGBTgrabbers"),
+                                 (10026,"ZbieraczyLegiiWarszawy"),
+                                 (10027,"ScottishGrabbers"),
+                                 (10028,"DeaconsGrabbers"),
+                                 (10029,"RamasseursRapides1234"),
+                                 (10030,"FansOfLewandowski");
+
+
+INSERT INTO equiperamasseurs VALUES
+                                 (10031,"VampiricGrabbers"),
+                                 (10032,"RamasseursDeLausanne"),
+                                 (10033,"RamasseursFéministes"),
+                                 (10034,"UndeadGrabbers"),
+                                 (10035,"RamasseursAK47"),
+                                 (10036,"Polacy"),
+                                 (10037,"KungFuGrabbers"),
+                                 (10038,"DeaconsGrabbers"),
+                                 (10039,"RamasseursCriminels"),
+                                 (10040,"EquipeDeKobaLaD");
+
+INSERT INTO equiperamasseurs VALUES
+                                 (10041,"GangstersTeam"),
+                                 (10042,"LesRamasseursStéphanois"),
+                                 (10043,"BangGrabbers"),
+                                 (10044,"BankRobbers"),
+                                 (10045,"MonkeyRamasseurs"),
+                                 (10046,"WeLoveAmericaTeam"),
+                                 (10047,"CallOfDutyPlayers"),
+                                 (10048,"LosAngelesGrabbers"),
+                                 (10049,"ZbieraczyZSosnowcu"),
+                                 (10050,"EquipeDePNL");
+
+
+INSERT INTO equiperamasseurs VALUES
+                                 (10051,"LaMafiaItaliana"),
+                                 (10052,"FrenchWarriors"),
+                                 (10053,"PidorGrabbers"),
+                                 (10054,"RamasseursDeMarseille"),
+                                 (10055,"EquipeDuTerrTerr"),
+                                 (10056,"ChicagoEagles"),
+                                 (10057,"FortniteGrabbers"),
+                                 (10058,"HomelessGrabbers"),
+                                 (10059,"RamasseursCimetieres"),
+                                 (10060,"NinhoCaRamasse");
+
+INSERT INTO equiperamasseurs VALUES
+                                 (10061,"TyphoonGrabbers"),
+                                 (10062,"DortmundBalljungen"),
+                                 (10063,"RusskiyeIgroki"),
+                                 (10064,"RamasseursDiplomésDeHarvard"),
+                                 (10065,"TeamDidierDeschamps"),
+                                 (10066,"NewYorkFellasTeam"),
+                                 (10067,"RamasseursParcoursC"),
+                                 (10068,"RamasseursAuChômage"),
+                                 (10069,"DemolitionGrabbers"),
+                                 (10070,"MaradunGrabbers");
 
 /**/
