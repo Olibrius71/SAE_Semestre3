@@ -7,6 +7,8 @@ $connexion= new Connexion();
 
 $baseDonnees = $connexion->getBdd();
 
+$type_tournoi = $_GET["type"];
+
 
 $joueurs_atp = $baseDonnees->query("SELECT atp FROM joueurs ORDER BY atp ASC;")->fetchAll();
 
@@ -38,8 +40,12 @@ $joueurs_req->execute([$quartil3]);
 
 $joueurs_array = $joueurs_req->fetchAll();
 
-
-$indices_joueurs_selectionnes = array_rand($joueurs_array,32);
+if ($type_tournoi==="simple") {
+    $indices_joueurs_selectionnes = array_rand($joueurs_array, 32);
+}
+else {
+    $indices_joueurs_selectionnes = array_rand($joueurs_array, 32);
+}
 
 $joueurs_selectionnes = array();
 
@@ -71,6 +77,7 @@ $id_arbitres_selectionnes = array();
 
 function fillMatchArray($nb_matchs,$need_to_fill_joueurs): array
 {
+    global $type_tournoi;
     $matchs_array = array();
     global $joueurs_selectionnes;
     global $arbitres_array;
@@ -125,7 +132,12 @@ function fillMatchArray($nb_matchs,$need_to_fill_joueurs): array
             }
         }
         if ($need_to_fill_joueurs) {
-            $matchs_array[] = ["Joueur1" => $joueur1, "Joueur2" => $joueur2, "ArbitrePrincipal" => $arbitre_principal, "ArbitreSecondaire1" => $arbitre_secondaire1, "ArbitreSecondaire2" => $arbitre_secondaire2, "EquipeRamasseurs1" => $team_ramasseur1, "EquipeRamasseurs2" => $team_ramasseur2, "Court" => $court];
+            if ($type_tournoi==="simple") {
+                $matchs_array[] = ["Joueur1" => $joueur1, "Joueur2" => $joueur2, "ArbitrePrincipal" => $arbitre_principal, "ArbitreSecondaire1" => $arbitre_secondaire1, "ArbitreSecondaire2" => $arbitre_secondaire2, "EquipeRamasseurs1" => $team_ramasseur1, "EquipeRamasseurs2" => $team_ramasseur2, "Court" => $court];
+            }
+            else {
+                $matchs_array[] = ["Joueur1" => $joueur1, "Joueur2" => $joueur2, "ArbitrePrincipal" => $arbitre_principal, "ArbitreSecondaire1" => $arbitre_secondaire1, "ArbitreSecondaire2" => $arbitre_secondaire2, "EquipeRamasseurs1" => $team_ramasseur1, "EquipeRamasseurs2" => $team_ramasseur2, "Court" => $court];
+            }
         }
         else {
             $matchs_array[] = ["ArbitrePrincipal" => $arbitre_principal, "ArbitreSecondaire1" => $arbitre_secondaire1, "ArbitreSecondaire2" => $arbitre_secondaire2, "EquipeRamasseurs1" => $team_ramasseur1, "EquipeRamasseurs2" => $team_ramasseur2, "Court" => $court];
@@ -140,6 +152,7 @@ if (!isset($_GET["modify"])) {
     $matchs_quarts_array = fillMatchArray(4, false);
     $matchs_demis_array = fillMatchArray(2, false);
     $matchs_finale_array = fillMatchArray(1, false);
+
     $_SESSION["sauvegardeSeiziemes"] = $matchs_seiziemes_array;
     $_SESSION["sauvegardeHuitiemes"] = $matchs_huitiemes_array;
     $_SESSION["sauvegardeQuarts"] = $matchs_quarts_array;
@@ -196,5 +209,20 @@ function modifyCourt($oldCourt,$newCourt) {
     if ($matchs_finale_array[0]["Court"]["IDCOURT"]==$oldCourt) $matchs_finale_array[0]["Court"] = $courts_array[$newCourt-1];
 }
 
+
+function showData($array_search,$index,$desire) {
+    switch ($desire) {
+        case "Joueur1":
+            return $array_search[$index]["Joueur1"]["PRENOMJOUEUR"] . '<span style="text-transform:uppercase"> ' .$array_search[$index]["Joueur1"]["NOMJOUEUR"].'</span>';
+        case "Joueur2":
+            return $array_search[$index]["Joueur2"]["PRENOMJOUEUR"] . '<span style="text-transform:uppercase"> ' .$array_search[$index]["Joueur2"]["NOMJOUEUR"].'</span>';
+        case "ArbitrePrincipal":
+            return $array_search[$index]["ArbitrePrincipal"]["PRENOMARBITRE"] . '<span style="text-transform:uppercase"> ' .$array_search[$index]["ArbitrePrincipal"]["NOMARBITRE"].'</span>';
+        case "ArbitreSecondaire1":
+            return $array_search[$index]["ArbitreSecondaire1"]["PRENOMARBITRE"] . '<span style="text-transform:uppercase"> ' .$array_search[$index]["ArbitreSecondaire1"]["NOMARBITRE"].'</span>';
+        case "ArbitreSecondaire2":
+            return $array_search[$index]["ArbitreSecondaire2"]["PRENOMARBITRE"] . '<span style="text-transform:uppercase"> ' .$array_search[$index]["ArbitreSecondaire2"]["NOMARBITRE"].'</span>';
+    }
+}
 
 ?>

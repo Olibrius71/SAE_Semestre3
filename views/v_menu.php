@@ -51,7 +51,8 @@
             <div class="menu">
                 <ul>
                     <li>Accueil</li>
-                    <li><a href="index.php?page=generation">Génération Planification</li>
+                    <li><a href="index.php?page=generation&type=simple">Génération Planification 1v1</li>
+                    <li><a href="index.php?page=generation&type=double">Génération Planification 2v2</li>
                     <li><a href="index.php?page=achat">Billetterie</a></li>
                     <li>Tournois</li>
                 </ul>

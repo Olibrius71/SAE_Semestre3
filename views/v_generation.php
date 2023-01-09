@@ -2,9 +2,6 @@
 require_once(PATH_CONTROLLERS_P.'header.php');
 ?>
 
-<?php
-global $matchs_seiziemes_array;
-?>
 
 <section class="generation-containers" id="generation-container-information">
     <h2 id="generation-information">Génération aléatoire de la plannification des matchs</h2>
@@ -28,36 +25,36 @@ global $matchs_seiziemes_array;
         <div class="table-content">
             <div class="table-row" id="table-player-names1">
                 <div class="table-data">Joueurs</div>
-                <div class="table-data"><?=$matchs_seiziemes_array[0]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[0]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[0]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[0]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[1]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[1]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[1]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[1]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[2]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[2]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[2]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[2]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[3]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[3]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[3]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[3]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[4]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[4]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[4]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[4]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[5]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[5]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[5]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[5]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[6]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[6]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[6]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[6]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[7]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[7]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[7]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[7]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,0,"Joueur1"). " vs " .showData($matchs_seiziemes_array,0,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,1,"Joueur1"). " vs " .showData($matchs_seiziemes_array,1,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,2,"Joueur1"). " vs " .showData($matchs_seiziemes_array,2,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,3,"Joueur1"). " vs " .showData($matchs_seiziemes_array,3,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,4,"Joueur1"). " vs " .showData($matchs_seiziemes_array,4,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,5,"Joueur1"). " vs " .showData($matchs_seiziemes_array,5,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,6,"Joueur1"). " vs " .showData($matchs_seiziemes_array,6,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,7,"Joueur1"). " vs " .showData($matchs_seiziemes_array,7,"Joueur2"); ?></div>
             </div>
             <div class="table-row" id="table-referee-names1">
                 <div class="table-data">Arbitres</div>
-                <div class="table-data"><?=$matchs_seiziemes_array[0]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[0]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[1]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[1]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[2]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[2]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[3]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[3]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[4]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[4]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[5]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[5]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[6]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[6]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[7]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[7]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,0,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,1,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,2,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,3,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,4,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,5,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,6,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,7,"ArbitrePrincipal")?></div>
             </div>
             <div class="table-row" id="table-referees-secondary-names1">
                 <div class="table-data">Arbitres secondaires</div>
-                <div class="table-data"><?=$matchs_seiziemes_array[0]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[0]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[0]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[0]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[1]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[1]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[1]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[1]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[2]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[2]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[2]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[2]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[3]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[3]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[3]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[3]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[4]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[4]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[4]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[4]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[5]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[5]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[5]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[5]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[6]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[6]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[6]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[6]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[7]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[7]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[7]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[7]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,0,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,0,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,1,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,1,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,2,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,2,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,3,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,3,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,4,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,4,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,5,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,5,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,6,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,6,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,7,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,7,"ArbitreSecondaire2"); ?></div>
             </div>
             <div class="table-row" id="table-grabers-names1">
                 <div class="table-data">Ramasseurs</div>
@@ -99,36 +96,36 @@ global $matchs_seiziemes_array;
         <div class="table-content">
             <div class="table-row" id="table-player-names2">
                 <div class="table-data">Joueurs</div>
-                <div class="table-data"><?=$matchs_seiziemes_array[8]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[8]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[8]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[8]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[9]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[9]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[9]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[9]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[10]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[10]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[10]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[10]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[11]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[11]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[11]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[11]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[12]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[12]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[12]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[12]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[13]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[13]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[13]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[13]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[14]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[14]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[14]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[14]["Joueur2"]["NOMJOUEUR"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[15]["Joueur1"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[15]["Joueur1"]["NOMJOUEUR"]?></span> vs <?=$matchs_seiziemes_array[15]["Joueur2"]["PRENOMJOUEUR"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[15]["Joueur2"]["NOMJOUEUR"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,8,"Joueur1"). " vs " .showData($matchs_seiziemes_array,8,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,9,"Joueur1"). " vs " .showData($matchs_seiziemes_array,9,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,10,"Joueur1"). " vs " .showData($matchs_seiziemes_array,10,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,11,"Joueur1"). " vs " .showData($matchs_seiziemes_array,11,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,12,"Joueur1"). " vs " .showData($matchs_seiziemes_array,12,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,13,"Joueur1"). " vs " .showData($matchs_seiziemes_array,13,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,14,"Joueur1"). " vs " .showData($matchs_seiziemes_array,14,"Joueur2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,15,"Joueur1"). " vs " .showData($matchs_seiziemes_array,15,"Joueur2"); ?></div>
             </div>
             <div class="table-row" id="table-referee-names2">
                 <div class="table-data">Arbitres</div>
-                <div class="table-data"><?=$matchs_seiziemes_array[8]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[8]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[9]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[9]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[10]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[10]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[11]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[11]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[12]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[12]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[13]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[13]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[14]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[14]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[15]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[15]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,8,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,9,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,10,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,11,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,12,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,13,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,14,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,15,"ArbitrePrincipal")?></div>
             </div>
             <div class="table-row" id="table-referees-secondary-names2">
                 <div class="table-data">Arbitres secondaires</div>
-                <div class="table-data"><?=$matchs_seiziemes_array[0]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[0]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[8]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[8]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[1]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[1]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[9]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[9]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[2]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[2]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[10]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[10]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[3]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[3]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[11]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[11]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[4]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[4]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[12]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[12]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[5]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[5]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[13]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[13]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[6]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[6]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[14]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[14]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_seiziemes_array[7]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[7]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_seiziemes_array[15]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_seiziemes_array[15]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,8,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,8,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,9,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,9,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,10,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,10,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,11,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,11,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,12,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,12,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,13,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,13,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,14,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,14,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_seiziemes_array,15,"ArbitreSecondaire1"). " et " .showData($matchs_seiziemes_array,15,"ArbitreSecondaire2"); ?></div>
             </div>
             <div class="table-row" id="table-grabbers-names2">
                 <div class="table-data">Ramasseurs</div>
@@ -182,25 +179,25 @@ global $matchs_seiziemes_array;
             </div>
             <div class="table-row" id="table-referee-names3">
                 <div class="table-data">Arbitres</div>
-                <div class="table-data"><?=$matchs_huitiemes_array[0]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[0]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[1]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[1]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[2]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[2]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[3]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[3]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[4]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[4]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[5]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[5]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[6]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[6]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[7]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[7]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,0,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,1,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,2,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,3,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,4,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,5,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,6,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,7,"ArbitrePrincipal")?></div>
             </div>
             <div class="table-row" id="table-referees-secondary-names3">
                 <div class="table-data">Arbitres secondaires</div>
-                <div class="table-data"><?=$matchs_huitiemes_array[0]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[0]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_huitiemes_array[0]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[0]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[1]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[1]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_huitiemes_array[1]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[1]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[2]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[2]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_huitiemes_array[2]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[2]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[3]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[3]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_huitiemes_array[3]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[3]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[4]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[4]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_huitiemes_array[4]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[4]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[5]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[5]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_huitiemes_array[5]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[5]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[6]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[6]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_huitiemes_array[6]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[6]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_huitiemes_array[7]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[7]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_huitiemes_array[7]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_huitiemes_array[7]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,0,"ArbitreSecondaire1"). " et " .showData($matchs_huitiemes_array,0,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,1,"ArbitreSecondaire1"). " et " .showData($matchs_huitiemes_array,1,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,2,"ArbitreSecondaire1"). " et " .showData($matchs_huitiemes_array,2,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,3,"ArbitreSecondaire1"). " et " .showData($matchs_huitiemes_array,3,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,4,"ArbitreSecondaire1"). " et " .showData($matchs_huitiemes_array,4,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,5,"ArbitreSecondaire1"). " et " .showData($matchs_huitiemes_array,5,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,6,"ArbitreSecondaire1"). " et " .showData($matchs_huitiemes_array,6,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_huitiemes_array,7,"ArbitreSecondaire1"). " et " .showData($matchs_huitiemes_array,7,"ArbitreSecondaire2"); ?></div>
             </div>
             <div class="table-row" id="table-grabers-names3">
                 <div class="table-data">Ramasseurs</div>
@@ -246,17 +243,17 @@ global $matchs_seiziemes_array;
             </div>
             <div class="table-row" id="table-referee-names4">
                 <div class="table-data">Arbitres</div>
-                <div class="table-data"><?=$matchs_quarts_array[0]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[0]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_quarts_array[1]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[1]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_quarts_array[2]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[2]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_quarts_array[3]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[3]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_quarts_array,0,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_quarts_array,0,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_quarts_array,0,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_quarts_array,0,"ArbitrePrincipal")?></div>
             </div>
             <div class="table-row" id="table-referees-secondary-names4">
                 <div class="table-data">Arbitres secondaires</div>
-                <div class="table-data"><?=$matchs_quarts_array[0]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[0]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_quarts_array[0]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[0]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_quarts_array[1]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[1]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_quarts_array[1]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[1]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_quarts_array[2]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[2]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_quarts_array[2]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[2]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_quarts_array[3]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[3]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_quarts_array[3]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_quarts_array[3]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_quarts_array,0,"ArbitreSecondaire1"). " et " .showData($matchs_quarts_array,0,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_quarts_array,1,"ArbitreSecondaire1"). " et " .showData($matchs_quarts_array,1,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_quarts_array,2,"ArbitreSecondaire1"). " et " .showData($matchs_quarts_array,2,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_quarts_array,3,"ArbitreSecondaire1"). " et " .showData($matchs_quarts_array,3,"ArbitreSecondaire2"); ?></div>
             </div>
             <div class="table-row" id="table-grabers-names4">
                 <div class="table-data">Ramasseurs</div>
@@ -290,13 +287,13 @@ global $matchs_seiziemes_array;
             </div>
             <div class="table-row" id="table-referee-names5">
                 <div class="table-data">Arbitres</div>
-                <div class="table-data"><?=$matchs_demis_array[0]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_demis_array[0]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_demis_array[1]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_demis_array[1]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_demis_array,0,"ArbitrePrincipal")?></div>
+                <div class="table-data"><?php echo showData($matchs_demis_array,1,"ArbitrePrincipal")?></div>
             </div>
             <div class="table-row" id="table-referees-secondary-names5">
                 <div class="table-data">Arbitres secondaires</div>
-                <div class="table-data"><?=$matchs_demis_array[0]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_demis_array[0]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_demis_array[0]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_demis_array[0]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
-                <div class="table-data"><?=$matchs_demis_array[1]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_demis_array[1]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_demis_array[1]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_demis_array[1]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_demis_array,0,"ArbitreSecondaire1"). " et " .showData($matchs_demis_array,0,"ArbitreSecondaire2"); ?></div>
+                <div class="table-data"><?php echo showData($matchs_demis_array,1,"ArbitreSecondaire1"). " et " .showData($matchs_demis_array,1,"ArbitreSecondaire2"); ?></div>
             </div>
             <div class="table-row" id="table-grabers-names5">
                 <div class="table-data">Ramasseurs</div>
@@ -324,11 +321,11 @@ global $matchs_seiziemes_array;
             </div>
             <div class="table-row" id="table-referee-names6">
                 <div class="table-data">Arbitres</div>
-                <div class="table-data"><?=$matchs_finale_array[0]["ArbitrePrincipal"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_finale_array[0]["ArbitrePrincipal"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_finale_array,0,"ArbitrePrincipal")?></div>
             </div>
             <div class="table-row" id="table-referees-secondary-names6">
                 <div class="table-data">Arbitres secondaires</div>
-                <div class="table-data"><?=$matchs_finale_array[0]["ArbitreSecondaire1"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_finale_array[0]["ArbitreSecondaire1"]["NOMARBITRE"]?></span> et <?=$matchs_finale_array[0]["ArbitreSecondaire2"]["PRENOMARBITRE"]?> <span style="text-transform:uppercase"><?=$matchs_finale_array[0]["ArbitreSecondaire2"]["NOMARBITRE"]?></span></div>
+                <div class="table-data"><?php echo showData($matchs_finale_array,0,"ArbitreSecondaire1"). " et " .showData($matchs_finale_array,0,"ArbitreSecondaire2"); ?></div>
             </div>
             <div class="table-row" id="table-grabers-names6">
                 <div class="table-data">Ramasseurs</div>
